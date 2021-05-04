@@ -1,0 +1,901 @@
+/*
+ Copyright (c) 2017 TeamF1, Inc. (www.TeamF1.com)
+ All rights reserved.
+ Created on 12th October 2017 - Bala Krishna G
+ */
+
+@charset "utf-8";
+.loginBody {
+    background: #00A99D !important;
+}
+html,
+body {
+    height: 100%;
+}
+.parent-element {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+* {
+    outline: 0;
+}
+.element {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.onlyHeight {
+    height: 100%;
+}
+.midOne {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.loginLogo {
+    background: #e22129;
+    border-radius: 50%;
+    width: 222px;
+    height: 222px;
+    line-height: 222px;
+    text-align: center;
+    margin: 20px auto;
+}
+.pageCenter {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.loginLogo > img {
+    line-height: 184px;
+    text-align: center;
+}
+.loginForm {
+    background: #fff;
+    width: 380px;
+    height: 265px;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px #333;
+    padding: 25px 15px;
+    margin: 0 auto;
+}
+.logoBlock {
+    background: transparent;
+    box-shadow: none;
+}
+.loginForm > .configRow {
+    padding: 4px 0 10px 0 !important;
+    overflow: hidden;
+}
+.configRow {
+    clear: both;
+    padding: 0;
+}
+.loginForm .configRow > label {
+    font-weight: normal;
+}
+.loginForm .submitRow {
+    margin: 20px 0 0 0;
+    width: 100%;
+    padding: 0;
+}
+.loginForm .configRow > label,
+.loginForm .configRow > p {
+    color: #000000;
+    float: left;
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+    text-align: left;
+    line-height: 36px;
+    font-size: 14px;
+}
+.loginForm .configRow > input,
+select,
+textarea {
+    border: none;
+    background: #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    float: left;
+    height: 36px;
+    margin: 0;
+    padding: 0 8px;
+    font-size: 12px;
+    width: 364px;
+}
+.loginBtn {
+    background: #00A99D;
+    width: 100%;
+    line-height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.loginBtn:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+.configRow > label {
+    color: #9c9b9b;
+    float: left;
+    margin: 0;
+    max-width: 40%;
+    min-width: 40%;
+    padding: 0 10px 0 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 26px;
+}
+.configRow > p {
+    color: #000000;
+    float: left;
+    margin: 0;
+    padding: 0 10px 0 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 26px;
+}
+.configRow > div.valueDisplay {
+    max-width: 56%;
+    min-width: 56%;
+    float: left;
+}
+.configRow > div.valueDisplay > p {
+    color: #000000;
+    float: left;
+    margin: 0;   
+    padding: 0 10px 0 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 26px;
+}
+.configRow > img {
+    cursor: pointer;
+    padding: 0;
+    float: left;
+}
+/* content area block */
+
+.content-topBlock {
+    background: #00A99D;
+    height: 50px;
+    color: #fff;
+    padding: 0 20px;
+    text-align: right
+}
+.pageLinks {
+    background: #E9E9E9;
+    height: 70px;
+    line-height: 70px;
+    color: #1D1D1D;
+    padding: 0 20px;
+}
+.contentArea {
+    margin: 20px;
+}
+.tab-content {
+    padding: 20px;
+    background: #f2f1ef;
+    border-radius: 8px;
+}
+.userDetails {
+    background: none;
+    border: none;
+    margin: 0 7px;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+}
+.userDetails:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+.btnHelp {
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+    display: block;
+    margin: 10px 7px;
+    color: #575757;
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+}
+.helpButton:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+/******************** INNER PAGE STYLES ********/
+
+.container {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    clear: both
+}
+.nav-side-menu {
+    overflow: auto;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0px;
+    width: 263px;
+    height: 100%;
+    color: #333;
+    padding: 0 0 0 15px;
+    float: left;
+}
+#accordion {
+    list-style: none;
+    padding: 2px 0;
+    margin: 0px 10px 0 0;
+}
+#accordion > li {
+    display: block;
+    list-style: none;
+}
+#accordion > li > a {
+    display: block;
+    color: #323232;
+    margin: 0 0;
+    padding: 4px 0;
+    background: url(../images/noExpand.png) no-repeat right center;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Montserrat-Medium;
+}
+#accordion > li#tf1_hid_dashboard a {
+    background: none;
+}
+#accordion > li > ul.submenu li a.activeChild {
+    color: #09897d;
+}
+#accordion > li > ul {
+    list-style: none;
+    padding: 6px;
+    display: none;
+    overflow: auto
+}
+#accordion > ul li {
+    font-weight: normal;
+    cursor: auto;
+    padding: 0 0 0 7px;
+}
+#accordion a {
+    text-decoration: none;
+    content: 'O';
+}
+#accordion li > a:hover {} #accordion li > a.active {
+    background: url(../images/expand.png) no-repeat right center;
+}
+#accordion > li > ul.submenu li a {
+    color: #656668;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: Montserrat-Light;
+}
+#accordion > li > ul.submenu li a > span {
+    font-size: 16px;
+    margin-right: 6px;
+    font-family: Sans-serif;
+}
+#accordion > li > ul.submenu li a:hover {
+    color: #09897d;
+}
+#main {
+    width: 892px;
+    float: right;
+    min-height: 100%;
+   margin-bottom: -80px;
+}
+ 
+body, html { height: 100%;}
+
+#main:after {
+  content: "";
+  display: block;
+}
+
+.mainContent {
+    background: #F1EFED;
+    padding: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 822px;
+}
+.mainContent > h1 {
+    font-size: 14px;
+    color: #1D1D1D;
+    padding-left: 0;
+    width: auto;
+}
+.contentMidArea {
+    margin: 30px 20px;
+    width: 852px;
+}
+/* Demo 2 */
+
+#demo-2 {
+    margin: 10px 7px;
+    float: right;
+}
+#demo-2 input.searchMenu {
+   background: #ededed url(../images/search-icon.png) no-repeat 5px center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    padding: 0px;
+    color: transparent;
+    cursor: pointer;
+    border: none;    
+    width: 30px;
+    height: 30px;
+   
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+
+
+}
+#demo-2 input.searchMenu:hover {
+    background-color: #fff;
+    border: none;
+}
+#demo-2 input.searchMenu:focus {
+    border:none;
+    width: 150px;
+    padding-left: 32px;
+    color: #000;
+    background-color: #fff;
+    cursor: auto;
+}
+input.searchMenu[type=search] {
+   /* background: #ededed url(../images/search-icon.png) no-repeat 5px center;
+    border: none;    
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;*/
+}
+/***********  inner tab pages styles starts here ***************/
+
+.innerNav,
+.innerNavDual {
+    margin: 0 0 0 16px;
+    padding: 0;
+    display: block;
+	clear: both;
+}
+.innerNav li,
+.innerNavDual li {
+    float: left;
+    list-style: none;
+    margin: 0 4px;
+}
+.innerNav li a {
+    display: block;
+    padding: 0 15px;
+    line-height: 45px;
+    background: #E6E7E8;
+    color: #bcbec0;
+    border-radius: 4px 4px 0 0;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Montserrat-Medium !important;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s
+}
+.innerNav li a:hover,
+.innerNav li a.activeTab,
+.innerNavDual li a:hover,
+.innerNavDual li a.activeTab {
+    background: #00A99D;
+    color: #FFFFFF;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+.innerNavDual li a {
+    display: block;
+    padding: 10px 15px 0px 15px;
+    height: 35px !important;
+    background: #E6E7E8;
+    color: #BBBDBF;
+    border-radius: 4px 4px 0 0;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 13px !important;
+    text-align: center;
+    font-family: Montserrat-Medium !important;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s
+}
+/***********  inner tab pages styles ends here ***************/
+
+.unAuthorised {
+    background: #f1efed none repeat scroll 0 0;
+    border-radius: 4px;
+    box-shadow: 0 6px 6px #333;
+    color: red;
+    float: none;
+    height: 75px;
+    line-height: 40px;
+    margin: 0 auto;
+    padding: 25px 15px;
+    text-align: center;
+    width: 500px;
+    font-size: 12px;
+}
+.dropbtn {
+    background: transparent url("../images/carat.png") right center no-repeat;
+    color: #ffffff;
+    padding:0 16px;
+   line-height: 50px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+    color: rgba(255, 255, 255, 0.8);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00a99d;
+    color: #ffffff; 
+    overflow: auto;    
+    z-index: 1;
+    right: -20px;
+    top: 50px;
+}
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {
+    background-color: #00a99d;
+    color: rgba(255, 255, 255, 0.8);
+}
+.show {
+    display: block;
+}
+/******************* dashboard styles *****************/
+
+.mainContentDBord {
+    background: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+.graphArea {
+    background: #E9E9E9;
+    height: 250px;
+    width: 607px;
+    border-radius: 4px;
+    float: left;
+    padding: 10px;
+position: relative;
+}
+.graphArea > .resUtilization {
+    height: 25px;
+}
+.graphArea > .resUtilization .titleOne {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/chartIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 35px;
+    line-height: 25px;
+}
+.graphArea > .resUtilization .titleOne > a.refreshIcons { 
+    background: url(../images/refreshIcon.png) no-repeat right center;
+    width: 13px;
+    height: 13px;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+.titleTwo {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/disksIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 22px;
+    line-height: 25px;
+    margin: 0 10px 0 0;
+}
+.applicationBlock {
+    background: #E9E9E9;
+    height: 250px;
+    width: 174px;
+    border-radius: 4px;
+    float: right;
+    padding: 10px 10px 10px 20px;
+}
+.applicationBlock .titleThree {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/applicationIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+.dbRow {
+    clear: both;
+    padding: 6px 0;
+    overflow: hidden;
+}
+.dbRow label {
+    float: left;
+    font-size: 10px;
+}
+.dbRow p {
+    float: right;
+}
+.yesNo {
+    background: url(../images/yesIcon.png) 0 0 no-repeat;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    display: block;
+float: left;
+}
+.noYes {
+    background: url(../images/noIcon.png) 0 0 no-repeat;
+    height: 13px;
+    width: 13px;
+    padding: 0;
+    display: block;
+float: left;
+}
+.diviceStatusBlock {
+    margin: 15px 0 0px 0;
+    overflow: hidden;
+    clear: both;
+}
+.clearAll {
+    clear: both;
+}
+.diviceStatus {
+    background: #E9E9E9;
+    height: 280px;
+    width: 278px;
+    border-radius: 4px;
+    float: left;
+    padding: 10px 10px 10px 20px;
+    ;
+}
+.diviceStatus .diviceTitle {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/deviceStatusIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 28px;
+    line-height: 25px;
+}
+.deviceRow {
+    clear: both;
+    padding: 16px 0;
+}
+.deviceRow label,
+.deviceRow p {
+    float: left;
+    font-size: 10px;
+    width: 50%;
+    color: #808184
+}
+.deviceRow p {
+    color: #000000
+}
+.userSecurityBlock {
+    float: left;
+    width: 227px;
+    margin: 0 15px;
+}
+.userSecurityBlock > .userBlock, .userSecurityBlock > .voipBlock {
+    background: #E9E9E9;
+    height: 120px;
+    width: 197px;
+    border-radius: 4px;
+    float: left;
+    padding: 10px 10px 10px 20px;
+    margin: 0 0 15px 0;
+}
+.userSecurityBlock > .userBlock .userTitle, .userSecurityBlock > .voipBlock .voipTitle {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/userIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 35px;
+    line-height: 30px;
+}
+.userSecurityBlock > .voipBlock .voipTitle {
+    background: url(../images/voip.png) 0 0 no-repeat !important;
+}
+.userRow {
+    clear: both;
+    padding: 16px 0;
+}
+.userRow label,
+.userRow p {
+    float: left;
+    font-size: 10px;
+    width: 70%;
+    color: #808184
+}
+.userRow p {
+    color: #000000;
+    width: 30%;
+}
+.voipRow {
+    clear: both;
+    padding: 10px 0;
+}
+.voipRow label,
+.voipRow p {
+    float: left;
+    font-size: 10px;
+    width: 70%;
+    color: #808184
+}
+.voipRow p {
+    color: #000000;
+    width: 30%;
+}
+
+.userSecurityBlock > .securityBlock {
+    background: #E9E9E9;
+    height: 125px;
+    width: 197px;
+    border-radius: 4px;
+    float: left;
+    padding: 10px 10px 10px 20px;
+    ;
+}
+.userSecurityBlock > .securityBlock .securityTitle {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/secureIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 35px;
+    line-height: 30px;
+}
+.securityRow {
+    clear: both;
+    padding: 16px 0;
+}
+.securityRow label,
+.securityRow p {
+    float: left;
+    font-size: 10px;
+    width: 50%;
+    color: #808184
+}
+.securityRow p {
+    color: #000000;
+}
+.wanLanBlock {
+    background: #E9E9E9;
+    min-height: 280px;
+    width: 256px;
+    border-radius: 4px;
+    float: left;
+    padding: 10px 10px 10px 20px;
+    ;
+}
+.wanLanBlock .wanTitle {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/wanIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 40px;
+    line-height: 30px;
+}
+.wanLanBlock .lanTitle {
+    float: left;
+    font-size: 12px;
+    color: #424242;
+    text-align: left;
+    background: url(../images/lanIcon.png) 0 0 no-repeat;
+    padding: 0 0 0 45px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.spaceOut {
+    border: 1px solid #ffffff;
+    width: 50px;
+    text-align: left;
+    margin: 5px 5px 0 0;
+    float: left;
+}
+.spaceInOne {
+    background: #FF0000;
+    width: 43px;
+    height: 8px;
+}
+.spaceInTwo {
+    background: #FFFF00;
+    width: 36px;
+    height: 8px;
+}
+.spaceInThree {
+    background: #00CC00;
+    width: 22px;
+    height: 8px;
+}
+.diskSpace {
+    float: left;
+}
+canvas {
+    margin: 10px;
+    text-align: left;
+}
+.optionOne,
+.optionTwo {
+    float: left;
+    width: 120px;
+}
+.optionOne p,
+.optionTwo p {
+    float: left;
+    padding: 0 0 0 10px;
+    line-height: 20px;
+}
+.optionOne {
+    margin: 0 0 0 20px;
+}
+.lineOne,
+.lineTwo {
+    border: 1px solid #000000;
+    float: left;
+    height: 14px;
+    width: 14px;
+    margin: 3px 0 0 0
+}
+.lineOne {
+    background: #00ff00;
+}
+.lineTwo {
+    background: #ef5a59;
+}
+.firmwareInfo {
+    position: fixed;
+    bottom: 0;
+}
+.firmwareInfo p {
+    font-size: 12px;
+    color: #424242;
+    margin: 20px 0 10px 0;
+    font-family: Montserrat-Light;
+}
+.firmwareInfo p span {
+    color: #000000;
+    font-family: Montserrat-Medium;
+    line-height: 20px;
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(../Fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../Fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../Fonts/Montserrat-Regular.ttf);
+}
+.dashboardRow {
+    padding: 0px;
+    margin: 0;
+    overflow: hidden;
+}
+.dashboardRow label,
+.dashboardRow p {
+    color: #424242;
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+    min-width: 48%;
+}
+.dashboardRow label {
+    min-width: 36% !important;
+}
+.dashboardRow p {
+    min-width: 56% !important;
+    font-weight: bold;
+}
+.dashboardRow p span {
+    padding: 0 15px 0 0;
+    width: 20px;
+}
+#accountStatusChart {
+    width: 250px;
+    height: 200px;
+}
+
+
+ /* Dropdown Button */
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    min-width: 120px;
+}
+
+.dropdown-content a:hover {   border-radius: 0 0 4px 4px;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.attachedDisksBlock {
+clear: both;
+width: 100%;
+overflow: hidden;
+position: absolute;
+bottom: 10px;}
+.disksAttached { width: 470px; float: right; margin: 4px 0 0 0;}
+.ipv6AddressMore{ width: 100% !important; line-height: 16px; }
+
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input:-webkit-autofill {
+-webkit-box-shadow:0 0 0 50px #ffffff inset;
+}

